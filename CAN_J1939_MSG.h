@@ -206,7 +206,7 @@ typedef union
         uint64_t             ECU1_Lowpriority_Parm4            :4;
         uint64_t             ECU1_Lowpriority_Parm5            :4;
         uint64_t             ECU1_Lowpriority_Parm6            :16;
-        uint64_t             ECU1_Lowpriority_Parm7            :8;                       
+        uint64_t             ECU1_Lowpriority_Parm7            :16;                       
     } ECU1_Lowpriority_s;        
     
 } ECU1_Lowpriority_t;
@@ -251,7 +251,7 @@ typedef union
         uint64_t             ECU2_Lowpriority_Parm4            :4;
         uint64_t             ECU2_Lowpriority_Parm5            :4;
         uint64_t             ECU2_Lowpriority_Parm6            :16;
-        uint64_t             ECU2_Lowpriority_Parm7            :8;                       
+        uint64_t             ECU2_Lowpriority_Parm7            :16;                       
     } ECU2_Lowpriority_s;        
     
 } ECU2_Lowpriority_t;
