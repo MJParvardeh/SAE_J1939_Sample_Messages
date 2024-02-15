@@ -31,9 +31,9 @@ typedef union
     uint32_t            J1939_ID_Value;
     struct
     {
-        uint8_t        Source_Address                   :8;                /* There shall only be one device on the network with a given source address. */
-        uint32_t       PGN_Value                        :18;            /* Whenever it is necessary to identify a Parameter Group in the data field of a CAN data frame,  */
-        uint8_t        Priority                         :3;                /* These three bits are used to optimize message latency for transmission onto the bus only. */
+        uint8_t        Priority        :3;             /* These three bits are used to optimize message latency for transmission onto the bus only. */
+        uint32_t       PGN_Value       :18;            /* Whenever it is necessary to identify a Parameter Group in the data field of a CAN data frame. */
+        uint8_t        Source_Address  :8;             /* There shall only be one device on the network with a given source address. */
     } J1939_ID_s;
 } J1939_ID_t;
 
